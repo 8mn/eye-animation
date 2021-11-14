@@ -71,12 +71,12 @@ html {
 	display: block;
 }
 
-#eye-lid {
+.eye-lid {
 	transform-origin: center center 0px;
 	animation: 1500ms ease 0s infinite alternate-reverse none running eyelid;
 }
 
-#eye-ball {
+.eye-ball {
 	animation: 1500ms ease 0s infinite alternate-reverse none running eyeball;
 }
 

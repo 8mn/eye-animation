@@ -4,7 +4,7 @@ const svg = document.querySelector("svg");
 
 //follow cursor on mousemove
 // box.addEventListener("mousemove", (e) => {
-// 	let x = e.pageX *;
+// 	let x = e.pageX ;
 // 	let y = e.pageY;
 
 // 	cursor.style.top = y + "px";
