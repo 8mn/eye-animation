@@ -33,11 +33,15 @@ html {
     /* cursor: url(""); */
 }
 
-.box span {
+
+.box:hover .cursor{
+    transform: scale(1);
+}
+.cursor {
 	background: white none repeat scroll 0% 0%;
 	padding: 16px;
 	border-radius: 50%;
-	transform: scale(1);
+	transform: scale(0);
 	transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
 	border: 1px solid rgb(80, 81, 119);
     /* display: none; */
@@ -47,7 +51,7 @@ html {
   position: fixed;
 }
 
-.box span svg {
+.cursor svg {
 	stroke: rgb(27, 28, 50);
 	display: block;
 }
