@@ -32,6 +32,7 @@ body{
     font-size: 2rem;
     padding: 0 10rem;
     font-family: 'Satoshi', sans-serif;
+    color: #111827;
 }
 
 .gallery{
@@ -140,4 +141,29 @@ body{
 	100% {
 		transform: scaleY(1);
 	}
+}
+
+
+footer{
+    border-top: 1px solid snow;
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.linkto{
+    color: #111827;
+    text-decoration: none;
+  /* text-transform: uppercase; */
+  background-color: #ffe347a6;
+  padding: .4rem;
+  transition: background 150ms ease-out 0s;
+
+}
+
+.linkto:hover{
+    background-color: #FFE247;
+}
+
+.desc a{
+    color: #111827;
 }
