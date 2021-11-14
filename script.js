@@ -20,27 +20,3 @@ document.addEventListener("mouseout", () => {
 });
 
 
-
-// 	box.addEventListener("mousemove", getMouse); 
-
-// var eyepos = { x: 0, y: 0 };
-
-// setInterval(followMouse, 50);
-
-// var mouse = { x: 0, y: 0 }; //mouse.x, mouse.y
-
-// function getMouse(e) {
-// 	mouse.x = e.pageX;
-// 	mouse.y = e.pageY;
-// }
-
-// function followMouse() {
-// 	var distX = mouse.x - eyepos.x;
-// 	var distY = mouse.y - eyepos.y;
-// 	eyepos.x += distX / 5;
-// 	eyepos.y += distY / 2;
-
-// 	cursor.style.left = eyepos.x + "px";
-// 	cursor.style.top = eyepos.y + "px";
-//     cursor.style.display = "block";
-// }
