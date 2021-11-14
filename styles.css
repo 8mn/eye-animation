@@ -28,31 +28,32 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    cursor: pointer;
-    cursor: none;
-    /* cursor: url(""); */
+	cursor: pointer;
+	cursor: none;
+	/* cursor: url(""); */
 }
 
-
-.box:hover .cursor{
-    transform: scale(1);
+.box:hover span {
+	transform: scale(1);
 }
+
 .cursor {
 	background: white none repeat scroll 0% 0%;
 	padding: 16px;
 	border-radius: 50%;
+	border: 1px solid #111827;
+	/* display: none; */
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	display: none;
+	position: fixed;
 	transform: scale(0);
 	transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
-	border: 1px solid rgb(80, 81, 119);
-    /* display: none; */
-    pointer-events: none;
-     transform: translate(-50%, -50%);
-  display: none;
-  position: fixed;
+    /* will-change: transform; */
 }
 
 .cursor svg {
-	stroke: rgb(27, 28, 50);
+	stroke: #111827;
 	display: block;
 }
 
