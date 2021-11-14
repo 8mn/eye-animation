@@ -1,6 +1,6 @@
-const cursor = document.querySelector(".cursor");
-const box = document.querySelector(".box");
-const svg = document.querySelector("svg");
+const cursor = document.querySelectorAll(".cursor");
+const box = document.querySelectorAll(".box");
+const svg = document.querySelectorAll("svg");
 
 //follow cursor on mousemove
 // box.addEventListener("mousemove", (e) => {
@@ -14,27 +14,36 @@ const svg = document.querySelector("svg");
 
 // });
 
-
 let mouseX = 0,
 	mouseY = 0;
 let xp = 0,
 	yp = 0;
 
-box.addEventListener("mousemove", function (e) {
-	mouseX = e.pageX ;
-	mouseY = e.pageY ;
+box.forEach(function (item) {
+	item.addEventListener("mousemove", function (e) {
+		mouseX = e.pageX;
+		mouseY = e.pageY;
+	});
 });
 
 setInterval(function () {
 	xp += (mouseX - xp) / 5;
 	yp += (mouseY - yp) / 5;
-	cursor.style.top = yp + "px";
-	cursor.style.left = xp + "px";
-	cursor.style.display = "block";
-	svg.style.display = "block";
+	cursor.forEach(function (c) {
+		c.style.top = yp + "px";
+		c.style.left = xp + "px";
+		c.style.display = "block";
+	});
+
+	svg.forEach(function (s) {
+		s.style.display = "block";
+	});
 }, 20);
 
-
-box.addEventListener("mouseout", () => {
-	svg.style.display = "none";
+box.forEach(function (item) {
+	item.addEventListener("mouseout", () => {
+		svg.forEach(function (s) {
+			s.style.display = "none";
+		});
+	});
 });
